@@ -1,0 +1,111 @@
+﻿@dark: #161616;
+@main-color: #C0A063;
+@second-color: #5e5e5e;
+@nav-color:#fff;
+@nav-brand-color:#c0a062;
+
+body{
+    font-family: 'Droid Serif', serif;
+}
+
+.dark{
+    background : @dark
+}
+
+.navbar-transparent{
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.nav-link{
+    font-size : 18px;
+    color: @nav-color!important;  
+    font-size: 18px;
+}
+
+.nav-link-logo{
+    display:block;
+    width:60px;
+    line-height:60px;
+    background-color:@nav-brand-color;
+    color:@dark!important;
+    font-size:18px;
+    font-weight:700;
+    text-align:center;
+    margin-right:10px;
+    float:left;
+}
+
+.nav-link-logo-desc{
+    font-size : 18px;
+    color: @nav-color!important;  
+    font-size: 18px;
+    display:block;
+    line-height:30px;
+}
+
+.navbar-beautify{
+    padding:40px;
+}
+
+ul.nav{
+    & a.nav-link-logo:hover{
+        color: @dark!important;
+        background-color:@nav-brand-color!important;
+        text-decoration:none!important;
+    }
+    & a.nav-link-logo:focus{ 
+        color: @dark!important;
+        background-color:@nav-brand-color!important;
+        text-decoration:none!important;
+    }
+    & a.nav-link-logo:active {
+        color: @dark!important;
+        background-color:@nav-brand-color!important;
+        text-decoration:none!important;
+    }
+} 
+
+section{
+    padding-top:150px;
+}
+
+section .section-intro{
+    color:@main-color;
+    font-weight:900;
+    line-height:1.26;
+    letter-spacing:-1px;
+}
+
+section .social-links{
+
+    &::before{
+        background:@main-color;
+        content: '';
+        height:1px;
+        top:50%;
+        float:left;
+        transform:translateY(1px);
+        display:block;
+        position:absolute;
+        width:35%;
+    }
+
+    ul.list-group{
+        left:37.5%;
+        position:relative;
+
+        li{
+            border:none;
+            background-color:transparent!important;
+            border-color:transparent!important;
+
+            &.list-group-item{
+                float:left;
+                color:@second-color;
+                font-size:32px;
+            }
+        }
+    }
+}
