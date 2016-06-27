@@ -12,37 +12,46 @@ body{
     background : @dark
 }
 
+.navbar{
+    font-size:18px;
+    font-family:Roboto,Helvetica,Arial,sans-serif;
+
+    .nav-link{
+        font-size : 18px;
+        color: @nav-color!important;  
+        font-size: 18px;
+    }
+
+    .nav-logo{
+        border:solid;
+        border-width:1px;
+        border-color:@main-color;
+    }
+
+    .nav-link-logo{
+        display:block;
+        width:60px;
+        line-height:60px;
+        background-color:@nav-brand-color;
+        color:@dark!important;
+        font-weight:700;
+        text-align:center;
+        margin-right:10px;
+        float:left;
+    }
+
+    .nav-link-logo-desc{
+        color: @nav-color!important;  
+        font-size: 18px;
+        display:block;
+        line-height:30px;
+    }
+}
+
 .navbar-transparent{
    background-color: transparent;
    background: transparent;
    border-color: transparent;
-}
-
-.nav-link{
-    font-size : 18px;
-    color: @nav-color!important;  
-    font-size: 18px;
-}
-
-.nav-link-logo{
-    display:block;
-    width:60px;
-    line-height:60px;
-    background-color:@nav-brand-color;
-    color:@dark!important;
-    font-size:18px;
-    font-weight:700;
-    text-align:center;
-    margin-right:10px;
-    float:left;
-}
-
-.nav-link-logo-desc{
-    font-size : 18px;
-    color: @nav-color!important;  
-    font-size: 18px;
-    display:block;
-    line-height:30px;
 }
 
 .navbar-beautify{
@@ -76,6 +85,7 @@ section .section-intro{
     font-weight:900;
     line-height:1.26;
     letter-spacing:-1px;
+    text-align:left;
 }
 
 section .social-links{
@@ -105,6 +115,10 @@ section .social-links{
                 float:left;
                 color:@second-color;
                 font-size:32px;
+
+                a > .fa{
+                    color:@second-color;
+                }
             }
         }
     }
